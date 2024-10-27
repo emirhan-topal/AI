@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+}
+
+.chatDiv{
+    width: 75%;
+    height: 100%;
+    background-color: grey;
+    float: right;
+    overflow: auto;
+}
+
+.inputDiv{
+    position: fixed;
+    bottom: 0px;
+    width: 74.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitButton{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: 0;
+}
+
+#input{
+    width: 100%;
+    font-size: large;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    resize: none;
+}
+
+.userMessageDiv{
+    width: fit-content;
+    max-width: 250px;
+    background-color: seagreen;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto;
+    overflow: auto;
+}
+
+.modelMessageDiv{
+    width: fit-content;
+    max-width: 500px;
+    background-color: dimgray;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#chatHistory{
+    height: 90vh;
+    overflow: auto;
+}
+
+#AI-chats{
+    width: 25%;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    overflow: auto;
+}
+
+#AI-chats .chat{
+    background-color: dimgray;
+    cursor: pointer;
+}
+
+#AI-chats .chat:hover{
+    background-color: gray;
+}
